@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+th {
+    background-color: #4caf50;
+    color: white;
+}
+
+.element {
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.element.non-metal {
+    background-color: #ffebcd;
+}
+
+.element.alkali-metal {
+    background-color: #f28b82;
+}
+
+.element.alkaline-earth-metal {
+    background-color: #fbbc04;
+}
+
+.element.transition-metal {
+    background-color: #aecbfa;
+}
+
+.element.metalloid {
+    background-color: #d7aefb;
+}
+
+.element.noble-gas {
+    background-color: #ccff90;
+}
+
+.element.lanthanoid {
+    background-color: #f4c7c3;
+}
+
+.element.actinoid {
+    background-color: #fdcfe8;
+}
+
+.element.metal {
+    background-color: #fff475;
+}
+
+td.empty {
+    background-color: #e0e0e0;
+}
+
+td[colspan] {
+    background-color: transparent;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
