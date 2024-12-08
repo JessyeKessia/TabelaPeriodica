@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 60px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-auto-rows: 1fr; 
+    gap: 10px;
+    width: 100%; 
+    max-width: 1000px;
+  }
+  
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Animação de aproximação */
+  }
+  
+  .grid-item img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+  }
+  
+ /* Especificação de tamanhos e posições */
+.grid-item.large {
+    grid-column: span 2; /* Ocupa 2 colunas */
+    grid-row: span 2; /* Ocupa 2 linhas */
+  }
+  
+  .grid-item.small {
+    grid-column: span 1; /* Ocupa 1 coluna */
+    grid-row: span 1; /* Ocupa 1 linha */
+  }
+  
+  .grid-item.medium {
+    grid-column: span 1; /* Ocupa 1 coluna */
+    grid-row: span 2; /* Ocupa 2 linhas */
+  }
+  
